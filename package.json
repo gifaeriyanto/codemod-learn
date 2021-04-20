@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jscodeshift": "^0.11.0"
+  },
+  "scripts": {
+    "start": "jscodeshift -t transform.js src -d -p"
+  }
+}
