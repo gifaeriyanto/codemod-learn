@@ -3,6 +3,6 @@
     "jscodeshift": "^0.11.0"
   },
   "scripts": {
-    "start": "jscodeshift -t transform/index.js src -d -p"
+    "start": "jscodeshift -t transform/index.js src -p"
   }
 }
