@@ -1,5 +1,5 @@
 {
-  "name": "learn-codemod",
+  "name": "codemod-learn",
   "description": "Learn codemod with jscodeshift",
   "version": "0.0.1",
   "author": "Gifa Eriyanto @gifaeriyanto",
@@ -12,8 +12,8 @@
     "removeConsoleLog": "jscodeshift -t transform/removeConsoleLog/index.js transform/removeConsoleLog/sample.js -p -d",
     "requireToImport": "jscodeshift -t transform/requireToImport/index.js transform/requireToImport/sample.js -p -d"
   },
-  "homepage": "https://github.com/gifaeriyanto/learn-codemod",
-  "repository": "gifaeriyanto/learn-codemod",
+  "homepage": "https://github.com/gifaeriyanto/codemod-learn",
+  "repository": "gifaeriyanto/codemod-learn",
   "license": "MIT",
   "keywords": [
     "codemod",
