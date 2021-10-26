@@ -1,8 +1,22 @@
 {
+  "name": "learn-codemod",
+  "description": "Learn codemod with jscodeshift",
+  "version": "0.0.1",
+  "author": "Gifa Eriyanto @gifaeriyanto",
   "dependencies": {
     "jscodeshift": "^0.11.0"
   },
   "scripts": {
-    "start": "jscodeshift -t transform/index.js src -d -p"
-  }
+    "basicFuncToArrowFunc": "jscodeshift -t transform/basicFuncToArrowFunc/index.js transform/basicFuncToArrowFunc/sample.js -p -d",
+    "callbackToArrowFunc": "jscodeshift -t transform/callbackToArrowFunc/index.js transform/callbackToArrowFunc/sample.js -p -d",
+    "removeConsoleLog": "jscodeshift -t transform/removeConsoleLog/index.js transform/removeConsoleLog/sample.js -p -d",
+    "requireToImport": "jscodeshift -t transform/requireToImport/index.js transform/requireToImport/sample.js -p -d"
+  },
+  "homepage": "https://github.com/gifaeriyanto/learn-codemod",
+  "repository": "gifaeriyanto/learn-codemod",
+  "license": "MIT",
+  "keywords": [
+    "codemod",
+    "jscodeshift"
+  ]
 }
