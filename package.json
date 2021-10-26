@@ -1,6 +1,6 @@
 {
   "name": "codemod-learn",
-  "description": "Learn codemod with jscodeshift",
+  "description": "Learn how to refactor without touching the main files",
   "version": "0.0.1",
   "author": "Gifa Eriyanto @gifaeriyanto",
   "dependencies": {
