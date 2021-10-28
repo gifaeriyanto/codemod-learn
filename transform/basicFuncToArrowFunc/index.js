@@ -7,11 +7,8 @@ export default (fileInfo) => {
     j(path).replaceWith(
       j.variableDeclaration("const", [
         j.variableDeclarator(
-          j.identifier(path.node.id.name),
-          j.arrowFunctionExpression(
-            path.node.params,
-            j.blockStatement(path.node.body.body)
-          )
+          path.node.id,
+          j.arrowFunctionExpression(path.node.params, path.node.body)
         ),
       ])
     );
