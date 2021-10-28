@@ -10,12 +10,8 @@ export default (fileInfo, api) => {
     ) {
       j(path).replaceWith(
         j.importDeclaration(
-          [
-            j.importDefaultSpecifier(
-              j.identifier(path.node.declarations[0].id.name)
-            ),
-          ],
-          j.literal(path.node.declarations[0].init.arguments[0].value)
+          [j.importDefaultSpecifier(path.node.declarations[0].id)],
+          path.node.declarations[0].init.arguments[0]
         )
       );
     }

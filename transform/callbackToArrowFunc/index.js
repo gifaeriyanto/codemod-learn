@@ -5,10 +5,7 @@ export default (fileInfo) => {
 
   root.find(j.FunctionExpression).forEach((path) => {
     j(path).replaceWith(
-      j.arrowFunctionExpression(
-        path.node.params,
-        j.blockStatement(path.node.body.body)
-      )
+      j.arrowFunctionExpression(path.node.params, path.node.body)
     );
   });
 
