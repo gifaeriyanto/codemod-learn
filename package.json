@@ -8,6 +8,7 @@
   },
   "scripts": {
     "basicFuncToArrowFunc": "jscodeshift -t transform/basicFuncToArrowFunc/index.js transform/basicFuncToArrowFunc/sample.js -p -d",
+    "reactComponent": "jscodeshift -t transform/reactComponent/classToFuncReactComp.ts --extensions=tsx --parser=tsx transform/reactComponent/sample.tsx -p -d",
     "callbackToArrowFunc": "jscodeshift -t transform/callbackToArrowFunc/index.js transform/callbackToArrowFunc/sample.js -p -d",
     "removeConsoleLog": "jscodeshift -t transform/removeConsoleLog/index.js transform/removeConsoleLog/sample.js -p -d",
     "requireToImport": "jscodeshift -t transform/requireToImport/index.js transform/requireToImport/sample.js -p -d"
@@ -18,5 +19,9 @@
   "keywords": [
     "codemod",
     "jscodeshift"
-  ]
+  ],
+  "devDependencies": {
+    "@types/jscodeshift": "^0.11.3",
+    "typescript": "^4.4.4"
+  }
 }
